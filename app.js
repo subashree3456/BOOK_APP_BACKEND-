@@ -12,6 +12,9 @@ app.use(express.json());
 app.use(cors());
 app.use("/books", router);
 
+app.get('/' ,(req,res)=>{
+res.send("Book store App.... ")
+})
 
 const databaseConnection = async() => {
  
